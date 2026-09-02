@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jurnal Ngoprek — Catatan Harian Linux</title>
+<style>
+  :root {
+    --bg: #EFF1EC;
+    --paper: #F8F9F6;
+    --ink: #1E2A24;
+    --ink-soft: #4B564F;
+    --accent: #4F6F5C;
+    --accent-warm: #A3652C;
+    --line: #CDD2C7;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+
+  /* ===== HEADER ===== */
+  .site-header {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+  }
+
+  .site-header h1 {
+    font-size: 2.1rem;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+
+  .site-header p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-family: 'Consolas', 'DejaVu Sans Mono', monospace;
+    font-size: 0.85rem;
+  }
+
+  .site-header p span {
+    color: var(--accent);
+  }
+
+  /* ===== NAV ===== */
+  nav.main-nav {
+    margin: 18px 0 40px;
+  }
+
+  nav.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Consolas', 'DejaVu Sans Mono', monospace;
+    font-size: 0.9rem;
+  }
+
+  nav.main-nav li:not(:last-child)::after {
+    content: "/";
+    color: var(--line);
+    margin: 0 10px;
+  }
+
+  nav.main-nav li {
+    display: flex;
+  }
+
+  nav.main-nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  nav.main-nav a:hover,
+  nav.main-nav a:focus-visible {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  /* ===== ARTIKEL ===== */
+  .article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  article {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 24px 28px;
+  }
+
+  article h2 {
+    margin: 0 0 8px;
+    font-size: 1.35rem;
+  }
+
+  .article-meta {
+    font-family: 'Consolas', 'DejaVu Sans Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+  }
+
+  .article-meta span.tag {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 1px 7px;
+    margin-right: 6px;
+  }
+
+  .article-meta span.author {
+    color: var(--accent);
+  }
+
+  article p {
+    margin: 0 0 12px;
+    color: var(--ink);
+  }
+
+  article p:last-child { margin-bottom: 0; }
+
+  article code {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 1px 5px;
+    font-family: 'Consolas', 'DejaVu Sans Mono', monospace;
+    font-size: 0.85em;
+    color: var(--accent-warm);
+  }
+
+  /* ===== FOOTER ===== */
+  footer.site-footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 2px solid var(--ink);
+    font-family: 'Consolas', 'DejaVu Sans Mono', monospace;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+  }
+
+  footer.site-footer .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  footer.site-footer .social-links a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    margin-left: 14px;
+  }
+
+  footer.site-footer .social-links a:first-child { margin-left: 0; }
+
+  footer.site-footer .social-links a:hover,
+  footer.site-footer .social-links a:focus-visible {
+    color: var(--accent);
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- ===== HEADER: elemen block header, h1, p ===== -->
+    <header class="site-header">
+      <h1>Jurnal Ngoprek</h1>
+      <p>catatan harian ngerawat Linux <span>~/kalimantan-selatan</span></p>
+    </header>
+
+    <!-- ===== NAVIGASI: nav (block) berisi ul/li/a (inline di dalam list) ===== -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#artikel">Artikel</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <!-- ===== KONTEN UTAMA: beberapa artikel ===== -->
+    <main id="beranda">
+      <div class="article-list" id="artikel">
+
+        <!-- Artikel 1 -->
+        <article>
+          <h2>Merapikan Rice Quickshell dengan Kartu Kaca</h2>
+          <div class="article-meta">
+            <span class="author">Hazwan</span> ·
+            <time datetime="2026-08-12">12 Agustus 2026</time> ·
+            <span class="tag">linux</span><span class="tag">ricing</span>
+          </div>
+          <p>
+            Minggu ini saya ubah tampilan <code>end-4/illogical-impulse</code>
+            jadi gaya <strong>glassmorphic</strong> — panel dan widget
+            dibikin melayang dengan latar blur, bukan nempel rata di
+            tepi layar. Efeknya kerasa banget di jam dan panel notifikasi.
+          </p>
+          <p>
+            Kalau kamu juga pakai Quickshell, kuncinya ada di
+            <em>border-radius</em> yang konsisten dan bayangan tipis
+            supaya kartu-kartunya kelihatan benar-benar mengambang.
+          </p>
+        </article>
+
+        <!-- Artikel 2 -->
+        <article>
+          <h2>Kenapa Saya Akhirnya Pindah ke Arch Linux</h2>
+          <div class="article-meta">
+            <span class="author">Hazwan</span> ·
+            <time datetime="2026-07-30">30 Juli 2026</time> ·
+            <span class="tag">distro</span><span class="tag">opini</span>
+          </div>
+          <p>
+            Alasannya sederhana: saya capek nunggu paket baru masuk
+            repo stabil. Rolling release bikin saya bisa pakai fitur
+            terbaru dari <code>pacman</code> hampir begitu rilis, dan
+            dokumentasi di ArchWiki jujur aja jadi alasan tersendiri.
+          </p>
+          <p>
+            Bukan berarti distro lain buruk — cuma workflow ngoprek
+            saya lebih cocok sama filosofi <em>do-it-yourself</em>-nya Arch.
+          </p>
+        </article>
+
+        <!-- Artikel 3 -->
+        <article>
+          <h2>Setup Dual Monitor buat Ngoding Malam</h2>
+          <div class="article-meta">
+            <span class="author">Hazwan</span> ·
+            <time datetime="2026-07-18">18 Juli 2026</time> ·
+            <span class="tag">produktivitas</span><span class="tag">setup</span>
+          </div>
+          <p>
+            Monitor kiri saya khususkan buat editor dan terminal,
+            monitor kanan buat dokumentasi atau referensi modul kuliah.
+            Kombinasi ini lumayan mengurangi <strong>alt-tab</strong>
+            yang selama ini bikin fokus buyar.
+          </p>
+          <p>
+            Tambahan kecil yang ternyata berpengaruh: warna layar
+            kanan saya redupkan sedikit lewat <code>ddcutil</code>
+            supaya matanya nggak lelah pas begadang.
+          </p>
+        </article>
+
+      </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer" id="tentang">
+      <div class="footer-row">
+        <p>&copy; 2026 Jurnal Ngoprek. Ditulis dan dirawat oleh Hazwan.</p>
+        <div class="social-links" id="kontak">
+          <a href="#">GitHub</a>
+          <a href="#">Trakteer</a>
+          <a href="#">Email</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
