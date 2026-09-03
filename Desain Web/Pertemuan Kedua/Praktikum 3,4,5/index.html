@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Praktikum 4 & 5</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        
+        /* Layout Utama Grid Mobile First [cite: 263] */
+        .layout { display: grid; min-height: 100vh; grid-template-columns: 1fr; grid-template-rows: auto auto 1fr auto; grid-template-areas: "header" "sidebar" "content" "footer"; }
+        
+        /* Media Query Tablet ke Atas [cite: 266, 267] */
+        @media (min-width: 768px) {
+            .layout { grid-template-columns: 250px 1fr; grid-template-rows: 70px 1fr 50px; grid-template-areas: "header header" "sidebar content" "footer footer"; }
+        }
+        
+        .header { grid-area: header; background: #1e293b; color: white; padding: 1rem; display: flex; align-items: center; }
+        .sidebar { grid-area: sidebar; background: #cbd5e1; padding: 1rem; }
+        .content { grid-area: content; background: #f1f5f9; padding: 2rem; }
+        .footer { grid-area: footer; background: #1e293b; color: white; padding: 1rem; text-align: center; }
+
+        /* Grid untuk Kartu Statistik di Content [cite: 258] */
+        .stat-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 1rem; }
+        @media (min-width: 768px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
+        
+        /* Animasi Transisi & Keyframes [cite: 283, 288] */
+        .stat-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; animation: fadeIn 0.8s ease-in; }
+        .stat-card:hover { transform: translateY(-5px); }
+        
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <header class="header"><h1>Admin Dashboard</h1></header>
+        <aside class="sidebar"><ul><li>Beranda</li><li>Laporan</li></ul></aside>
+        <main class="content">
+            <h2>Ringkasan</h2>
+            <div class="stat-grid">
+                <div class="stat-card"><h3>Pengguna</h3><p>1,234</p></div>
+                <div class="stat-card"><h3>Pendapatan</h3><p>Rp 5M</p></div>
+                <div class="stat-card"><h3>Kunjungan</h3><p>8,000</p></div>
+                <div class="stat-card"><h3>Rating</h3><p>4.8/5</p></div>
+            </div>
+        </main>
+        <footer class="footer">© 2023 Admin Dashboard</footer>
+    </div>
+</body>
+</html>

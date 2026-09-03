@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #0f172a; /* Warna kustom [cite: 411, 431] */
+  --color-brand-light: #334155;
+  --font-display: "Montserrat", sans-serif; /* Font kustom [cite: 412, 422] */
+}
+
+/* Komponen custom menggunakan @apply [cite: 416, 419, 431] */
+.btn-primary {
+  @apply bg-brand text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-brand-light hover:-translate-y-1 transition-all duration-300;
+}
+.btn-secondary {
+  @apply bg-white text-brand border-2 border-brand font-bold py-3 px-6 rounded-full shadow hover:bg-gray-100 transition-all duration-300;
+}

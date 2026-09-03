@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Biodata - Praktikum 1</title>
+    <style>
+        /* 1. Selector Element */
+        body { font-family: sans-serif; background-color: #f8fafc; }
+        
+        /* 2. Selector ID */
+        #biodata-wrapper { max-width: 600px; margin: 50px auto; background: white; padding: 20px; border-radius: 8px; }
+        
+        /* 3. Selector Class (1 dan 2) */
+        .judul-utama { color: #1d4ed8; text-align: center; }
+        .teks-motto { font-style: italic; color: #64748b; }
+        
+        /* 4. Selector Turunan */
+        #biodata-wrapper ul li { margin-bottom: 10px; list-style-type: square; }
+        
+        /* 5. Pseudo-class */
+        ul li:hover { color: #f97316; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div id="biodata-wrapper">
+        <h1 class="judul-utama">Biodata Mahasiswa</h1>
+        <ul>
+            <li><strong>Nama:</strong> Hazwan Fahmi Ghailan</li>
+            <li><strong>NIM:</strong> C030325124</li>
+            <li><strong>Prodi:</strong> Teknik Informatika</li>
+        </ul>
+        <p class="teks-motto">Motto: "Terus belajar tanpa henti."</p>
+    </div>
+</body>
+</html>
