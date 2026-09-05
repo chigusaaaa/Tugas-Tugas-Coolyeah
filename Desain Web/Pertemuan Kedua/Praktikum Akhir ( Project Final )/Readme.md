@@ -60,8 +60,7 @@ Pastikan [Node.js](https://nodejs.org/) (versi LTS) sudah terinstal di komputer.
    Hasil build akan tersimpan di folder `dist/`.
 
 ## 🌐 Live Demo
-
-[Tambahkan link deploy di sini setelah proses deploy selesai]
+(https://proyekfinaldesainweb.netlify.app/)
 
 ## 📁 Struktur Proyek
 
