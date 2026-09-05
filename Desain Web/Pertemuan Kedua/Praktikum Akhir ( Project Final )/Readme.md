@@ -2,7 +2,7 @@
 
 Proyek akhir mata kuliah Desain Web (Pertemuan Kedua) — landing page single page yang dibangun menggunakan **Tailwind CSS** dan **Vite**.
 
-## 📋 Identitas
+## 📋 Kreator
 
 - **Nama:** Hazwan Fahmi Ghailan
 - **NIM:** C030325124
@@ -38,7 +38,7 @@ Pastikan [Node.js](https://nodejs.org/) (versi LTS) sudah terinstal di komputer.
 
 1. **Clone repository ini**
 ```bash
-   git clone https://github.com/username_kamu/landing-page-tugas.git
+   git clone https://github.com/chigusaaaa/landing-page-tugas.git
    cd landing-page-tugas
 ```
 
