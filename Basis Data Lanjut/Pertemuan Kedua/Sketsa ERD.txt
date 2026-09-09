@@ -1,0 +1,17 @@
+ERD Perpus
+Entitas : Anggota
+Atribut : id anggota, nama anggota, jenis anggota ( pengurus / pengunjung ), no hp yang bisa di tambahkan lebih dari 1 dan maksimal 2
+
+Entitas : Buku
+Atribut : ISBN, judul buku, tahun terbit, jumlah eksemplar, id kategori, id penerbit
+
+Entitas : Penerbit
+Atribut : Nama penerbit, kode penerbit, nomor telepon
+
+Entitas : Kategori
+Atribut : id kategori, nama kategori, keterangan
+
+Relasi : 
+Buku - Anggota ( M - N ) 
+Buku - Penerbit ( 1 - M ) 
+Buku - Kategori ( 1 - M ) 
