@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ERD Perpustakaan" id="diagram1">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+<mxCell id="kategori_ent" value="Kategori" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1"><mxGeometry x="40" y="300" width="130" height="40" as="geometry"/></mxCell>
+<mxCell id="kategori_id" value="&lt;u&gt;id_kategori&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="40" y="170" width="150" height="40" as="geometry"/></mxCell>
+<mxCell id="kategori_nama" value="nama_kategori" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="240" y="60" width="160" height="40" as="geometry"/></mxCell>
+<mxCell id="kategori_ket" value="keterangan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="40" y="400" width="150" height="40" as="geometry"/></mxCell>
+<mxCell id="rel_menaungi2" value="Menaungi" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" vertex="1" parent="1"><mxGeometry x="260" y="240" width="150" height="60" as="geometry"/></mxCell>
+<mxCell id="anggota_ent" value="Anggota" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1"><mxGeometry x="380" y="500" width="130" height="40" as="geometry"/></mxCell>
+<mxCell id="anggota_id" value="&lt;u&gt;id_anggota&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="130" y="500" width="150" height="40" as="geometry"/></mxCell>
+<mxCell id="anggota_nama" value="nama_anggota" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="380" y="660" width="160" height="40" as="geometry"/></mxCell>
+<mxCell id="anggota_alamat" value="alamat" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="130" y="600" width="130" height="40" as="geometry"/></mxCell>
+<mxCell id="anggota_jenis" value="jenis_anggota" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="260" y="700" width="160" height="40" as="geometry"/></mxCell>
+<mxCell id="anggota_hp" value="no_hp" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="130" y="700" width="140" height="40" as="geometry"/></mxCell><mxCell id="anggota_hp_inner" value="" style="ellipse;html=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="1"><mxGeometry x="136" y="706" width="128" height="28" as="geometry"/></mxCell>
+<mxCell id="rel_meminjam" value="Meminjam" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" vertex="1" parent="1"><mxGeometry x="620" y="400" width="150" height="60" as="geometry"/></mxCell>
+<mxCell id="buku_ent" value="Buku" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1"><mxGeometry x="780" y="300" width="120" height="40" as="geometry"/></mxCell>
+<mxCell id="buku_isbn" value="&lt;u&gt;ISBN&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="900" y="200" width="120" height="40" as="geometry"/></mxCell>
+<mxCell id="buku_judul" value="judul_buku" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="700" y="150" width="160" height="40" as="geometry"/></mxCell>
+<mxCell id="buku_tahun" value="tahun_terbit" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="900" y="300" width="160" height="40" as="geometry"/></mxCell>
+<mxCell id="buku_jumlah" value="jumlah_eksemplar" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1020" y="100" width="190" height="40" as="geometry"/></mxCell>
+<mxCell id="pinjam_tgl_pinjam" value="tanggal_pinjam" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="500" y="100" width="170" height="40" as="geometry"/></mxCell>
+<mxCell id="pinjam_tgl_kembali" value="tanggal_kembali" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="640" y="60" width="180" height="40" as="geometry"/></mxCell>
+<mxCell id="pinjam_denda" value="denda" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="780" y="100" width="130" height="40" as="geometry"/></mxCell>
+<mxCell id="rel_menerbitkan" value="Menerbitkan" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1060" y="300" width="160" height="60" as="geometry"/></mxCell>
+<mxCell id="penerbit_ent" value="Penerbit" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1240" y="300" width="130" height="40" as="geometry"/></mxCell>
+<mxCell id="penerbit_kode" value="&lt;u&gt;kode_penerbit&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1400" y="220" width="170" height="40" as="geometry"/></mxCell>
+<mxCell id="penerbit_nama" value="nama_penerbit" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1400" y="300" width="170" height="40" as="geometry"/></mxCell>
+<mxCell id="penerbit_kota" value="kota" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1400" y="380" width="120" height="40" as="geometry"/></mxCell>
+<mxCell id="penerbit_telp" value="telp_penerbit" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1240" y="400" width="170" height="40" as="geometry"/></mxCell>
+<mxCell id="f1" value="1" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="kategori_ent" target="rel_menaungi2"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f2" value="M" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="rel_menaungi2" target="buku_ent"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f3" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="kategori_ent" target="kategori_id"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f4" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="kategori_ent" target="kategori_nama"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f5" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="kategori_ent" target="kategori_ket"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f6" value="M" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="anggota_ent" target="rel_meminjam"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f7" value="N" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="rel_meminjam" target="buku_ent"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f8" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="anggota_ent" target="anggota_id"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f9" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="anggota_ent" target="anggota_nama"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f10" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="anggota_ent" target="anggota_alamat"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f11" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="anggota_ent" target="anggota_jenis"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f12" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="anggota_ent" target="anggota_hp"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f13" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="buku_ent" target="buku_isbn"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f14" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="buku_ent" target="buku_judul"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f15" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="buku_ent" target="buku_tahun"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f16" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="buku_ent" target="buku_jumlah"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f17" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="rel_meminjam" target="pinjam_tgl_pinjam"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f18" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="rel_meminjam" target="pinjam_tgl_kembali"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f19" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="rel_meminjam" target="pinjam_denda"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f20" value="1" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="penerbit_ent" target="rel_menerbitkan"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f21" value="M" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="rel_menerbitkan" target="buku_ent"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f22" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="penerbit_ent" target="penerbit_kode"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f23" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="penerbit_ent" target="penerbit_nama"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f24" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="penerbit_ent" target="penerbit_kota"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="f25" value="" style="endArrow=none;html=1;fontSize=14;" edge="1" parent="1" source="penerbit_ent" target="penerbit_telp"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
